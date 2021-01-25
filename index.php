@@ -12,28 +12,29 @@
 
     #tamanhoContainer{
         width: 500px;
-    }
-    
+    }    
+
     </style>
 </head>
 
 <body>
     <div class="container" id="tamanhoContainer" style="margin-top: 40px;">
-        <form>
+        <h4>Formulário de Cadastro</h4>
+        <form action="inserirProduto.php" method="post" style="margin-top: 20px;">
             <div class="form-group">
                 <label>Número do Produto</label>
-                <input type="number" class="form-control" placeholder="Insira o número do produto">
+                <input type="number" class="form-control" name="nroproduto" placeholder="Insira o número do produto" autocomplete="off" required>
 
             </div>
 
             <div class="form-group">
                 <label>Nome do Produto</label>
-                <input type="text" class="form-control" placeholder="Insira o nome do produto">
+                <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do produto" autocomplete="off" required>
             </div>
 
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Categoria</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" name="categoria">
                     <option>Perifericos</option>
                     <option>Hardware</option>
                     <option>Software</option>
@@ -44,12 +45,12 @@
 
             <div class="form-group">
                 <label>Quantidade do Produto</label>
-                <input type="number" class="form-control" placeholder="Insira a quantidade do produto">
+                <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto" autocomplete="off" required>
             </div>
 
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Fornecedor</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" name="fornecedor">
                     <option>Fornecedor 1</option>
                     <option>Fornecedor 2</option>
                     <option>Fornecedor 3</option>
@@ -58,7 +59,10 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-success btn-sm">Cadastrar</button>
+            <div style="text-align: right;">
+                <button type="submit" class="btn btn-success btn-sm">Cadastrar</button>
+            </div>
+            
 
         </form>
 
