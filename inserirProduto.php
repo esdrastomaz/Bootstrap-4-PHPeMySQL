@@ -6,11 +6,7 @@
     $quantidade = $_POST['quantidade'];
     $fornecedor = $_POST['fornecedor'];
 
-    echo $nroproduto;
-    echo $nomeproduto;
-    echo $categoria;
-    echo $quantidade;
-    echo $fornecedor;
+    echo $sql = "INSERT INTO `estoque`(`nroproduto`, `nomeproduto`, `categoria`, `quantidade`, `fornecedor`) VALUES ($nroproduto,'$nomeproduto','$categoria', $quantidade,'$fornecedor')";
 
 
 ?>
