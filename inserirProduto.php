@@ -13,3 +13,5 @@ $sql = "INSERT INTO `estoque`(`skuproduto`, `nomeproduto`, `categoria`, `quantid
 $inserir = mysqli_query($conexao, $sql);
 
 ?>
+
+
