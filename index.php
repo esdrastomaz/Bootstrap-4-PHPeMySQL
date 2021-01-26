@@ -22,8 +22,8 @@
         <h4>Formulário de Cadastro</h4>
         <form action="inserirProduto.php" method="post" style="margin-top: 20px;">
             <div class="form-group">
-                <label>Número do Produto</label>
-                <input type="number" class="form-control" name="nroproduto" placeholder="Insira o número do produto" autocomplete="off" required>
+                <label>SKU do Produto</label>
+                <input type="text" class="form-control" name="skuproduto" placeholder="Insira o SKU do produto" autocomplete="off" required>
 
             </div>
 
