@@ -1,3 +1,5 @@
+<?php require_once "dependencias.php"?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,10 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Produtos</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/alertify.min.css" />
-    <link rel="stylesheet" href="css/themes/default.min.css" />
 </head>
 
 <body>
@@ -24,6 +22,7 @@
                     <th scope="col">Categoria</th>
                     <th scope="col">Quantidade</th>
                     <th scope="col">Fornecedor</th>
+                    <th scope="col">Ação</th>
                 </tr>
             </thead>
             <tr>
@@ -47,6 +46,7 @@
                 <td><?php echo $categoria   ?></td>
                 <td><?php echo $quantidade  ?></td>
                 <td><?php echo $fornecedor  ?></td>
+                <td><a class="btn btn-warning btn-sm" style="color:white" href="editarProduto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
             </tr>
 
 
@@ -58,11 +58,6 @@
     </div>
 
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="
-    sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/alertify.min.js"></script>
 </body>
 
 </html>

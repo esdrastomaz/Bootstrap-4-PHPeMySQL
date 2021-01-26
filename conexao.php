@@ -8,5 +8,4 @@
     $conexao = mysqli_connect($severname, $username, $password, $database);
 
 
-
 ?>
