@@ -1,4 +1,4 @@
-<?php require_once "dependencias.php"?>
+<?php require_once "dependencias.php" ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -46,18 +46,22 @@
                 <td><?php echo $categoria   ?></td>
                 <td><?php echo $quantidade  ?></td>
                 <td><?php echo $fornecedor  ?></td>
-                <td><a class="btn btn-warning btn-sm" style="color:white" href="editarProduto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
+                
+                <td>
+                <a class="btn btn-warning btn-sm" style="color:white" href="editarProduto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
+                <a class="btn btn-danger btn-sm" style="color:white" href="editarProduto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-trash-alt"></i></i>&nbsp;Excluir</a>
+                </td>
             </tr>
 
 
 
         <?php } ?>
         </tr>
-
         </table>
+        <div style="text-align: left;">
+            <a href="formularioCadastro.php?id=0" class="btn btn-success btn-sm">Voltar</a>
+        </div>
     </div>
-
-
 </body>
 
 </html>
