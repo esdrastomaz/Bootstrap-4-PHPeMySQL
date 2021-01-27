@@ -27,8 +27,11 @@ if (strlen($id_produto) > 0) {
             VALUES ('$skuproduto','$nomeproduto','$categoria', '$quantidade','$fornecedor')";
     }
     mysqli_query($conexao, $sql);
-}else{
-    //Erro
-}
+}    
+
+
 mysqli_close($conexao);
 header("location:listarProdutos.php");
+
+?>
+

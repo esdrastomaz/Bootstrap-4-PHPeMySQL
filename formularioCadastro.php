@@ -28,8 +28,8 @@ if (strlen($id_produto) == 0)
 
 <body>
 
-    <div class="container" id="tamanhoContainer" style="margin-top: 40px;">
-        <h4>Formulário de Cadastro</h4>
+    <div class="container jumbotron" id="tamanhoContainer" style="margin-top: 40px;">
+        <center><h4>Formulário de Cadastro</h4></center>
         <form action="inserirProduto.php" method="post" style="margin-top: 20px;">
             <div class="form-group">
                 <label>SKU do Produto</label>
@@ -70,7 +70,8 @@ if (strlen($id_produto) == 0)
             </div>
             <input type="hidden" id="inputIdProduto" name="inputIdProduto" value="<?php echo ($id_produto) ?>">
             <div style="text-align: right;">
-                <button type="submit" class="btn btn-success btn-sm">Salvar</button>                
+                <button type="submit" class="btn btn-success btn-sm">Salvar</button>
+                <button type="submit" class="btn btn-success btn-sm">Salvar e Voltar</button>                  
             </div>          
 
         </form>        
