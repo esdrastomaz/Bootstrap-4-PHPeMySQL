@@ -1,36 +1,23 @@
 <?php
-session_start();
-require_once "dependencias.php";
+require_once "menu.php";
+
+
 
 ?>
 
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
-    <style>
-        #tamanhoContainer {
-            width: 500px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <center><h3>Cadastro de Produtos</h3></center>    
-    <div style="text-align: right;">
-        <center><a href="formularioCadastro.php?id=0" class="btn btn-success">Cadastrar</a></center>
+<div class="container">
+    <div class="jumbotron">
+        <h3>Bem Vindo ao Café Controle!</h3>
+        <p class="lead">Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou informação.</p>
+        <hr class="my-4">
+        <p>Sistema para Cadastro de Produtos, Clientes e Fornecedores.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
     </div>
-
-
-</body>
-
-</html>
-
-<script type="text/javascript">
-
-</script>
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; Café Controle 2021</div>
+            </div>
+        </div>
+    </footer>
+</div>
