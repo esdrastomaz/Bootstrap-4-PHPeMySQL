@@ -34,7 +34,7 @@ require_once "dependencias.php";
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdown10">
                         <a class="dropdown-item" href="#">Minha Conta</a>
-                        <a class="dropdown-item" href="#">Sair</a>
+                        <a class="dropdown-item" href="logout.php">Sair</a>
                     </div>
                 </li>
             </ul>

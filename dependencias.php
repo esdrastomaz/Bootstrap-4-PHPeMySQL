@@ -2,7 +2,7 @@
 <link href="css/navbar.css" rel="stylesheet">
 <link rel="stylesheet" href="css/alertify.min.css" />
 <link rel="stylesheet" href="css/themes/default.min.css" />
-<link href="css/login.css" rel="stylesheet">
+
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://kit.fontawesome.com/585a3b9338.js" crossorigin="anonymous"></script>
