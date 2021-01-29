@@ -4,7 +4,7 @@ require_once "dependencias.php";
 
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-        <a style="font-weight:bold" class="navbar-brand" href="index.php"><i class="fas fa-coffee"></i>&nbsp;Café Controle</a>
+        <a style="font-weight:bold" class="navbar-brand" href="home.php"><i class="fas fa-coffee"></i>&nbsp;Café Controle</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
