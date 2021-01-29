@@ -21,7 +21,7 @@ require_once "menu.php";
             <h3>Lista de Produtos</h3>
         </center>
         <br>
-        <table class="table table-bordered" id="listarProdutos">
+        <table class="table table-bordered" >
             <thead>
                 <tr>
                     <th scope="col">SKU</th>
@@ -35,7 +35,7 @@ require_once "menu.php";
             <tr>
                 <?php
                 include 'conexao.php';
-                $sql = "SELECT * FROM estoque";
+                $sql = "SELECT * FROM estoque ORDER BY id_estoque";
                 $busca = mysqli_query($conexao, $sql);
 
                 while ($array = mysqli_fetch_array($busca)) {
@@ -87,14 +87,12 @@ require_once "menu.php";
 					type:"POST",
 					data:"id=" + id_estoque,
 					url:"excluirProduto.php?id=" + id_estoque,
-					success:function(r){
-
-						if(r==1){
-							$('#listarProdutos').load("listarProdutos.php");
-							alertify.success("Excluido com sucesso!!");
-						}else{
-							alertify.error("Não foi possível excluir");
-						}
+					success:function(){
+                        location.reload();                 
+                     
+					
+						
+					
 					}
 				});
 			}, function(){ 
